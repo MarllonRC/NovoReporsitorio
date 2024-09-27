@@ -1,0 +1,160 @@
+:root {
+    --primary-color: #007BFF; /* Azul */
+    --secondary-color: #333; /* Cinza escuro */
+    --text-color: #222; /* Preto */
+    --background-color: #f9f9f9; /* Fundo claro */
+}
+
+html {
+    scroll-behavior: smooth; /* Animação suave ao rolar */
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background: var(--secondary-color);
+    color: #fff;
+    padding: 1rem 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h2 {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 0.5rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 1rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 2rem;
+}
+
+#habilidades ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+#habilidades ul li {
+    margin: 0 1rem;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+#habilidades ul li i {
+    margin-right: 0.5rem;
+}
+
+/* Estilo do formulário */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input,
+form textarea {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+}
+
+button {
+    padding: 0.5rem;
+    background: var(--secondary-color);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#form-message {
+    margin-top: 1rem;
+}
+
+article {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background: #f9f9f9;
+    transition: box-shadow 0.3s ease;
+}
+
+article:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 0.5rem;
+}
+
+footer {
+    text-decoration: none;
+    background: #222;
+    color: #ddd;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+footer ul li {
+    display: inline;
+    margin-right: 1rem;
+}
+
+footer a {
+    color: #ddd;
+    text-decoration: none;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+footer a:hover {
+    color: #007BFF;
+    text-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin-bottom: 0.5rem;
+    }
+
+    form input,
+    form textarea {
+        width: 100%;
+    }
+}
